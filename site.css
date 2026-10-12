@@ -380,7 +380,7 @@ th, td { text-align: left; padding: 6px 10px; border-bottom: 1px solid #e3e3e0; 
 }
 .onboard-frame img { display: block; width: 100%; height: auto; max-width: 100%; border-radius: 6px; }
 .rec {
-  position: absolute; right: 18px; top: 16px; z-index: 1;
+  position: absolute; left: 18px; top: -12px; z-index: 1;
   font-family: var(--f-race); font-weight: 900; font-style: italic; font-size: .72rem; letter-spacing: .14em;
   background: var(--red); color: var(--white); padding: 4px 10px; transform: skewX(-12deg);
   animation: rec-blink 1.6s steps(2, start) infinite;
