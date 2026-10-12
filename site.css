@@ -386,7 +386,12 @@ th, td { text-align: left; padding: 6px 10px; border-bottom: 1px solid #e3e3e0; 
   animation: rec-blink 1.6s steps(2, start) infinite;
 }
 @keyframes rec-blink { 50% { opacity: .35; } }
-.onboard-frame figcaption { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 14px; }
+/* 🏁 His ask, 12 Oct 2026: each tag sits under its own part of the shot. Speedometer's
+   readout starts 42% across the shot and the Dashboard button ends at its right edge. */
+.onboard-frame figcaption { display: grid; grid-template-columns: 42% 1fr auto; gap: 10px; margin-top: 14px; align-items: start; }
+.onboard-frame figcaption .onboard-tag { justify-self: start; }
+.onboard-frame figcaption .onboard-tag-end { justify-self: end; }
+@media (max-width: 760px) { .onboard-frame figcaption { display: flex; flex-wrap: wrap; } }
 .onboard-tag {
   display: grid; gap: 2px; min-width: 0; min-height: 2.6rem;
   padding: 10px 16px; text-decoration: none;
