@@ -432,3 +432,6 @@ th, td { text-align: left; padding: 6px 10px; border-bottom: 1px solid #e3e3e0; 
 @media (prefers-reduced-motion: reduce) {
   .official-line a, .official-line a b, .official-line a .official-text { animation: none; }
 }
+
+/* 🔗 His ask, 12 Oct 2026: rostech.app#customize lands on this section, clear of the sticky bar. */
+#customize { scroll-margin-top: 88px; }
