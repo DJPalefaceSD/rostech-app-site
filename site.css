@@ -435,3 +435,14 @@ th, td { text-align: left; padding: 6px 10px; border-bottom: 1px solid #e3e3e0; 
 
 /* 🔗 His ask, 12 Oct 2026: rostech.app#customize lands on this section, clear of the sticky bar. */
 #customize { scroll-margin-top: 88px; }
+
+/* 🔍 His ask, 12 Oct 2026: tap the shot on a phone and it opens full size, where it pinches to zoom. */
+.onboard-zoom { display: block; position: relative; cursor: zoom-in; }
+.zoom-hint { display: none; }
+@media (max-width: 760px), (hover: none) {
+  .zoom-hint {
+    display: block; position: absolute; right: 8px; bottom: 8px;
+    font-family: var(--f-race); font-weight: 900; font-style: italic; font-size: .7rem; letter-spacing: .1em;
+    text-transform: uppercase; background: var(--carbon-3); color: var(--white); padding: 4px 8px;
+  }
+}
